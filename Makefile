@@ -6,3 +6,6 @@ brain-games: # позволит запускать игру без глобал�
 
 publish: 
 	npm publish --dry-run
+
+lint:
+	npx eslint
