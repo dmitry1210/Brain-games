@@ -24,10 +24,10 @@ while (roundsCounter < maxRoundsWon) {
     } else if (number % 2 != 0 && userAnswer === 'no') {
         console.log('Correct!');
         roundsCounter++;
-    } else if ((number % 2 === 0) && (userAnswer === 'no')) {
+    } else if ((number % 2 === 0) && (userAnswer != 'yes')) {
         console.log('\'' + userAnswer + '\'' + ' is wrong answer ;(. Correct answer was \'yes\'.\nLet\'s try again, ' + userName + '!');
         break;
-    } else if ((number % 2 != 0) && (userAnswer === 'yes')) {
+    } else if ((number % 2 != 0) && (userAnswer != 'no')) {
         console.log('\'' + userAnswer + '\'' + ' is wrong answer ;(. Correct answer was \'no\'.\nLet\'s try again, ' + userName + '!');
         break;
     }
