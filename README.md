@@ -4,5 +4,5 @@
 ### Code Climate
 [![Maintainability](https://api.codeclimate.com/v1/badges/e729eea71a9bb1027faf/maintainability)](https://codeclimate.com/github/dmitry1210/frontend-project-lvl1/maintainability)
 
-### brain-even playback via asciinema
-[![asciicast](https://asciinema.org/a/fyibGqoZb5B2LAu0eUqkc8VL0.svg)](https://asciinema.org/a/fyibGqoZb5B2LAu0eUqkc8VL0)
+### brain-calc playback via asciinema
+[![asciicast](https://asciinema.org/connect/7829ea93-ad7b-45a4-aedb-bfd43d2b3916.svg)](https://asciinema.org/connect/7829ea93-ad7b-45a4-aedb-bfd43d2b3916)
