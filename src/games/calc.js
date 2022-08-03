@@ -1,18 +1,15 @@
 import readlineSync from 'readline-sync';
-import {greeting} from '../cli.js';
+import {greeting, getRandomNumber} from '../index.js';
 
 export const userName = greeting();
 
-console.log('Hello, ' + userName + '!\nWhat is the result of this expression?');
+console.log('What is the result of this expression?');
 
 const maxRoundsWon = 3;
 let roundsCounter = 0;
 while (roundsCounter < maxRoundsWon) {
-    const getRandomNumber = () => {
-        return Math.round(Math.random() * 10);
-    }
-    let number1 = getRandomNumber();
-    let number2 = getRandomNumber();
+    const number1 = getRandomNumber();
+    const number2 = getRandomNumber();
 
     const operatorsArr = ['+', '-', '*'];
     const getRandomOperator = () => {
