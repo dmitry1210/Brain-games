@@ -5,4 +5,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/e729eea71a9bb1027faf/maintainability)](https://codeclimate.com/github/dmitry1210/frontend-project-lvl1/maintainability)
 
 ### brain-calc playback via asciinema
-[![asciicast](https://asciinema.org/connect/7829ea93-ad7b-45a4-aedb-bfd43d2b3916.svg)](https://asciinema.org/connect/7829ea93-ad7b-45a4-aedb-bfd43d2b3916)
+[![asciicast](https://asciinema.org/a/SmlosD7SPs1O9POxR9aqkazWw.svg)](https://asciinema.org/a/SmlosD7SPs1O9POxR9aqkazWw)
