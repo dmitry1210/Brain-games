@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import {greeting, getRandomNumber} from '../index.js';
+import {greeting, getRandomNumber, getNOD} from '../index.js';
 
 export const userName = greeting();
 
@@ -11,17 +11,9 @@ while (roundsCounter < maxRoundsWon) {
     const number1 = getRandomNumber();
     const number2 = getRandomNumber();
 
-    const getNOD = (number1, number2) => {
-        if (number2 !== 0) {
-            const k = number1 % number2;
-            return getNOD(number2, k);
-        }
-        return number1;
-    };
-
     console.log('Question: ' + number1 + ' ' + number2);
 
-    let corretAnswer = getNOD();
+    let corretAnswer = getNOD(number1, number2);
 
     const userAnswer = readlineSync.question('Your answer: ');
 
