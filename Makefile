@@ -16,6 +16,9 @@ brain-calc: # позволит запускать игру без глобаль
 brain-gcd: # позволит запускать игру без глобальной установки
 	node bin/brain-gcd.js
 
+brain-progression: # позволит запускать игру без глобальной установки
+	node bin/brain-progression.js
+
 publish: 
 	npm publish --dry-run
 
