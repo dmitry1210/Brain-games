@@ -1,13 +1,15 @@
 import readlineSync from 'readline-sync';
-import {greeting, getRandomNumber, getRandomNumber100} from '../index.js';
+import {greeting, getRandomNumber} from '../index.js';
 
 export const userName = greeting();
 
 console.log('What number is missing in the progression?');
 
 let firstNum = getRandomNumber();
-let incremnent = getRandomNumber();
-let newNum = firstNum + incremnent;
+let increment = getRandomNumber();
+let newNum = firstNum + increment;
+let randomIndex = getRandomNumber();
+let dots = '..';
 
 const getProgression = () => {
     let result = [];
@@ -15,16 +17,21 @@ const getProgression = () => {
 
     for (let i = 1; i < 10; i++) {
         result.push(newNum);
-        newNum = newNum + incremnent;
+        newNum = newNum + increment;
     }
+
     return result;
 }
 
 const progressionRow = getProgression();
 
+let correctAnswer = progressionRow[randomIndex];
+
+delete progressionRow[randomIndex];
+progressionRow[randomIndex] = '..';
+
 console.log('Question: ' + progressionRow);
-
-
+console.log('QuestionCheck: ' + correctAnswer);
 
 
 

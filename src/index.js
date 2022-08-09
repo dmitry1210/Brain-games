@@ -14,10 +14,6 @@ export const getRandomNumber = () => {
     return Math.round(Math.random() * 10);
 };
 
-export const getRandomNumber100 = () => {
-    return Math.round(Math.random() * 100);
-};
-
 export const getNOD = (a, b) => {
     if (a !== 0) {
         const k = a % b;
