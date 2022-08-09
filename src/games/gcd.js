@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import {greeting, getRandomNumber} from '../index.js';
+import {greeting, getRandomNumber, getNOD} from '../index.js';
 
 export const userName = greeting();
 
-console.log('What is the result of this expression?');
+console.log('Find the greatest common divisor of given numbers.');
 
 const maxRoundsWon = 3;
 let roundsCounter = 0;
@@ -11,26 +11,9 @@ while (roundsCounter < maxRoundsWon) {
     const number1 = getRandomNumber();
     const number2 = getRandomNumber();
 
-    const operatorsArr = ['+', '-', '*'];
-    const getRandomOperator = () => {
-        return operatorsArr[Math.floor(Math.random() * operatorsArr.length)];
-    } 
-    let operator = getRandomOperator();
+    console.log('Question: ' + number1 + ' ' + number2);
 
-    console.log('Question: ' + number1 + ' ' + operator + ' ' + number2);
-
-    let corretAnswer = 1;
-    switch (operator) {
-        case '+':
-            corretAnswer = number1 + number2;
-            break;
-        case '-':
-            corretAnswer = number1 - number2;
-            break;
-        case '*':
-            corretAnswer = number1 * number2;
-            break;
-    };
+    let corretAnswer = getNOD(number1, number2);
 
     const userAnswer = readlineSync.question('Your answer: ');
 
