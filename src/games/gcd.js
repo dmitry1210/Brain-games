@@ -15,6 +15,9 @@ while (roundsCounter < maxRoundsWon) {
 
     let corretAnswer = getNOD(number1, number2);
 
+    // показываем правильный ответ для быстрого тестирования
+    // console.log('CorrectAnswerCheck: ' + getNOD(number1, number2));
+
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (corretAnswer == userAnswer) {
