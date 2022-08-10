@@ -21,3 +21,19 @@ export const getNOD = (a, b) => {
     }
     return a;
 };
+
+export const getCorrectAnswer = (n) => {
+    let correctAnswer;
+    if (n === 1 || n === 0) {
+        return correctAnswer = 'no';
+    } else if ( n === 2) {
+        return correctAnswer = 'yes';
+    } else {
+        for ( let i = 2; i < n; i++) {
+            if (n % i === 0) {
+                return correctAnswer = 'no';
+            }
+        }
+        return correctAnswer = 'yes';
+    }
+};

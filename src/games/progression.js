@@ -34,6 +34,8 @@ while (roundsCounter < maxRoundsWon) {
     progressionRow[randomIndex] = '..';
     
     console.log('Question: ' + progressionRow.join(' '));
+
+    // показываем правильный ответ для быстрого тестирования
     // console.log('CorrectAnswerCheck: ' + correctAnswer);
 
     const userAnswer = readlineSync.question('Your answer: ');
