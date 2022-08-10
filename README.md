@@ -10,6 +10,9 @@
 ### brain-calc playback via asciinema
 [![asciicast](https://asciinema.org/a/WAC6BGhxm4V1u7XzEI1ju2iye.svg)](https://asciinema.org/a/WAC6BGhxm4V1u7XzEI1ju2iye)
 
+### brain-gcd playback via asciinema
+[![asciicast](https://asciinema.org/a/G3gXr74mbnUBYd3bHfEYrzbTu.svg)](https://asciinema.org/a/G3gXr74mbnUBYd3bHfEYrzbTu)
+
 ### brain-progression playback via asciinema
 [![asciicast](https://asciinema.org/a/AtjOP8ZATAIff9k447HPxXNGn.svg)](https://asciinema.org/a/AtjOP8ZATAIff9k447HPxXNGn)
 
