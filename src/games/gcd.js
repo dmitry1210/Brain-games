@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import {greeting, getRandomNumber, getNOD} from '../index.js';
+import {greeting, getRandomNumber100, getNOD} from '../index.js';
 
 export const userName = greeting();
 
@@ -8,8 +8,8 @@ console.log('Find the greatest common divisor of given numbers.');
 const maxRoundsWon = 3;
 let roundsCounter = 0;
 while (roundsCounter < maxRoundsWon) {
-    const number1 = getRandomNumber();
-    const number2 = getRandomNumber();
+    const number1 = getRandomNumber100();
+    const number2 = getRandomNumber100();
 
     console.log('Question: ' + number1 + ' ' + number2);
 
