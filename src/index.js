@@ -18,13 +18,18 @@ export const getRandomNumber100 = () => {
     return Math.round(Math.random() * 100);
 };
 
-export const getNOD = (a, b) => {
-    if (a !== 0) {
-        const k = a % b;
-        return getNOD(b, k);
+export function getNOD(x, y) {
+    if ((typeof x !=='number') || (typeof y !=='number')) 
+      return false;
+    x = Math.abs(x);
+    y = Math.abs(y);
+    while(y) {
+      var t = y;
+      y = x % y;
+      x = t;
     }
-    return a;
-};
+    return x;
+  }
 
 export const getCorrectAnswer = (n) => {
     let correctAnswer;
