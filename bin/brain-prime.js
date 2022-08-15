@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-import {userName} from '../src/games/prime.js';
+import { primeGame } from '../src/games/prime.js';
+
+primeGame();

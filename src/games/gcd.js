@@ -1,7 +1,9 @@
 import readlineSync from 'readline-sync';
 import {greeting, getRandomNumber100, getNOD} from '../index.js';
 
-export const userName = greeting();
+export const gcdGame = () => {
+
+const userName = greeting();
 
 console.log('Find the greatest common divisor of given numbers.');
 
@@ -31,4 +33,5 @@ while (roundsCounter < maxRoundsWon) {
     if (roundsCounter === maxRoundsWon) {
         console.log('Congratulations, ' + userName + '!')
     };    
+    }
 };

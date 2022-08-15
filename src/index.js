@@ -19,30 +19,31 @@ export const getRandomNumber100 = () => {
 };
 
 export function getNOD(x, y) {
-    if ((typeof x !=='number') || (typeof y !=='number')) 
-      return false;
-    x = Math.abs(x);
-    y = Math.abs(y);
-    while(y) {
-      var t = y;
-      y = x % y;
-      x = t;
-    }
-    return x;
+  if ((typeof x !== 'number') || (typeof y !== 'number')) {
+    return false;
   }
+  x = Math.abs(x);
+  y = Math.abs(y);
+  while(y) {
+    let t = y;
+    y = x % y;
+    x = t;
+  }
+  return x;
+}
 
 export const getCorrectAnswer = (n) => {
-    let correctAnswer;
-    if (n === 1 || n === 0) {
-        return correctAnswer = 'no';
-    } else if ( n === 2) {
-        return correctAnswer = 'yes';
-    } else {
-        for ( let i = 2; i < n; i++) {
-            if (n % i === 0) {
-                return correctAnswer = 'no';
-            }
-        }
-        return correctAnswer = 'yes';
-    }
+  let correctAnswer;
+  if (n === 1 || n === 0) {
+      return correctAnswer = 'no';
+  } else if ( n === 2) {
+    return correctAnswer = 'yes';
+  } else {
+      for ( let i = 2; i < n; i++) {
+          if (n % i === 0) {
+              return correctAnswer = 'no';
+          }
+      }
+    return correctAnswer = 'yes';
+  }
 };
