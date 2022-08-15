@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
-import {greeting, getRandomNumber} from '../index.js';
+import { greeting, getRandomNumber } from '../index.js';
 
-export const userName = greeting();
+export const progressionGame = () => {
+const userName = greeting();
 
 console.log('What number is missing in the progression?');
 
@@ -51,4 +52,5 @@ while (roundsCounter < maxRoundsWon) {
     if (roundsCounter === maxRoundsWon) {
         console.log('Congratulations, ' + userName + '!')
     };    
+    }
 };
