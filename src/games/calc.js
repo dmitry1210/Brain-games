@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 import { greeting, getRandomNumber } from '../index.js';
 
 export const calcGame = () => {
+
   const userName = greeting();
 
   console.log('What is the result of this expression?');
