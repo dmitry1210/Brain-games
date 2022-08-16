@@ -39,7 +39,7 @@ const progressionGame = () => {
 
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (correctAnswer === userAnswer) {
+    if (correctAnswer == userAnswer) {
       console.log('Correct!');
       roundsCounter += 1;
     } else {
