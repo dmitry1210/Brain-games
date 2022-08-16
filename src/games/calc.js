@@ -33,11 +33,9 @@ const calcGame = () => {
       // do nothing
     }
 
-    const userAnswer = readlineSync.question('Your answer: ');
-    // console.log(typeof (corretAnswer));
-    // console.log(typeof (userAnswer));
+    const userAnswer = Number(readlineSync.question('Your answer: '));
 
-    if (corretAnswer == userAnswer) {
+    if (corretAnswer === userAnswer) {
       console.log('Correct!');
       roundsCounter += 1;
     } else {

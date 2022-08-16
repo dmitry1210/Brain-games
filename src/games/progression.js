@@ -29,7 +29,6 @@ const progressionGame = () => {
 
     const correctAnswer = progressionRow[randomIndex];
 
-    delete progressionRow[randomIndex];
     progressionRow[randomIndex] = '..';
 
     console.log(`Question: ${progressionRow.join(' ')}`);
