@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { greeting, getRandomNumber, getCorrectAnswer } from '../index.js';
 
-export const primeGame = () => {
+const primeGame = () => {
   const userName = greeting();
 
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -11,7 +11,7 @@ export const primeGame = () => {
   while (roundsCounter < maxRoundsWon) {
     const number = getRandomNumber();
 
-    console.log('Question: ' + number);
+    console.log(`Question: ${number}`);
 
     const correctAnswer = getCorrectAnswer(number);
 
@@ -24,12 +24,14 @@ export const primeGame = () => {
       console.log('Correct!');
       roundsCounter += 1;
     } else {
-      console.log('\'' + userAnswer + '\'' + ' is wrong answer ;(. Correct answer was ' + '\'' + correctAnswer + '\'.\nLet\'s try again, ' + userName + '!');
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
       break;
     }
 
     if (roundsCounter === maxRoundsWon) {
-      console.log('Congratulations, ' + userName + '!')
+      console.log(`Congratulations, ${userName}!`);
     }
   }
 };
+
+export default primeGame;

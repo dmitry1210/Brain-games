@@ -5,7 +5,7 @@ export const greeting = () => {
 
   const userName = readlineSync.question('May I have your name? ');
 
-  console.log('Hello, ' + userName + '!');
+  console.log(`Hello, ${userName}!`);
 
   return userName;
 };
@@ -21,7 +21,7 @@ export function getNOD(x, y) {
   x = Math.abs(x);
   y = Math.abs(y);
   while (y) {
-    let t = y;
+    const t = y;
     y = x % y;
     x = t;
   }
@@ -36,13 +36,13 @@ export const getCorrectAnswer = (n) => {
   } if (n === 2) {
     correctAnswer = 'yes';
     return correctAnswer;
-  } else {
-    for ( let i = 2; i < n; i++) {
-      if (n % i === 0) {
-        correctAnswer = 'no';
-        return correctAnswer;
-      }
-    }
-    return correctAnswer = 'yes';
   }
+  for (let i = 2; i < n; i += 1) {
+    if (n % i === 0) {
+      correctAnswer = 'no';
+      return correctAnswer;
+    }
+  }
+  correctAnswer = 'yes';
+  return correctAnswer;
 };
