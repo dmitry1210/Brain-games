@@ -21,7 +21,7 @@ const gcdGame = () => {
 
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (corretAnswer === userAnswer) {
+    if (corretAnswer == userAnswer) {
       console.log('Correct!');
       roundsCounter += 1;
     } else {
