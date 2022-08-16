@@ -19,9 +19,9 @@ const gcdGame = () => {
     // показываем правильный ответ для быстрого тестирования
     // console.log('CorrectAnswerCheck: ' + getNOD(number1, number2));
 
-    const userAnswer = readlineSync.question('Your answer: ');
+    const userAnswer = Number(readlineSync.question('Your answer: '));
 
-    if (corretAnswer == userAnswer) {
+    if (corretAnswer === userAnswer) {
       console.log('Correct!');
       roundsCounter += 1;
     } else {

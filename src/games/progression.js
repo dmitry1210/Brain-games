@@ -36,9 +36,9 @@ const progressionGame = () => {
     // показываем правильный ответ для быстрого тестирования
     // console.log('CorrectAnswerCheck: ' + correctAnswer);
 
-    const userAnswer = readlineSync.question('Your answer: ');
+    const userAnswer = Number(readlineSync.question('Your answer: '));
 
-    if (correctAnswer == userAnswer) {
+    if (correctAnswer === userAnswer) {
       console.log('Correct!');
       roundsCounter += 1;
     } else {
