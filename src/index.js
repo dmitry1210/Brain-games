@@ -10,8 +10,24 @@ export const greeting = () => {
   return userName;
 };
 
-export const getRandomNumber = () => Math.round(Math.random() * 10);
-export const getRandomNumber100 = () => Math.round(Math.random() * 100);
+export const askQuestion = (question) => {
+  console.log(`${question}`);
+};
+export const gameRound = (correctAnswer, userAnswer, userName) => {
+  const maxRoundsWon = 3;
+  let roundsCounter = 0;
+  while (roundsCounter < maxRoundsWon) {
+    if (correctAnswer === userAnswer) {
+      console.log('Correct!');
+      roundsCounter += 1;
+    } else if (roundsCounter === maxRoundsWon) {
+      console.log(`Congratulations, ${userName}!`);
+    } else {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
+      break;
+    }
+  }
+};
 
 export function getNOD(x, y) {
   if ((typeof x !== 'number') || (typeof y !== 'number')) {
