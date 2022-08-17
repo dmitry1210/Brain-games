@@ -11,7 +11,6 @@ export const greeting = () => {
 };
 
 export const getRandomNumber = () => Math.round(Math.random() * 10);
-
 export const getRandomNumber100 = () => Math.round(Math.random() * 100);
 
 export function getNOD(x, y) {
