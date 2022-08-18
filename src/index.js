@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync';
-import calcGame from './games/calc.js';
 
 export const gameRound = (roundData, gameRules) => {
   console.log('Welcome to the Brain Games!');
@@ -11,7 +10,7 @@ export const gameRound = (roundData, gameRules) => {
   const maxRoundsWon = 3;
   let roundsCounter = 0;
   while (roundsCounter < maxRoundsWon) {
-    const [question, correctAnswer] = roundData();
+    const [question, correctAnswer] = roundData;
 
     console.log(`Question: ${question}`);
     const userAnswer = Number(readlineSync.question('Your answer: '));
@@ -27,7 +26,6 @@ export const gameRound = (roundData, gameRules) => {
   if (roundsCounter === maxRoundsWon) {
     console.log(`Congratulations, ${userName}!`);
   }
-  console.log(roundData(gameRound));
 };
 
 export function getNOD(x, y) {

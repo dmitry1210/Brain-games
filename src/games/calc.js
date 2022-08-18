@@ -1,13 +1,8 @@
-import readlineSync from 'readline-sync';
 import { getRandomNumber, getOperator } from '../utilities.js';
 import { gameRound } from '../index.js';
 
 const calcGame = () => {
-  let roundData;
   const gameRules = 'What is the result of this expression?';
-
-  gameRound(roundData, gameRules);
-
   const number1 = getRandomNumber();
   const number2 = getRandomNumber();
   const operator = getOperator();
@@ -29,9 +24,10 @@ const calcGame = () => {
     // do nothing
   }
 
-  // gameRound(correctAnswer, userAnswer, userName);
-
-  return [question, correctAnswer];
+  // return [question, correctAnswer];
+  const roundData = [question, correctAnswer];
+  gameRound(roundData, gameRules);
+  return roundData;
 };
 
 export default calcGame;
