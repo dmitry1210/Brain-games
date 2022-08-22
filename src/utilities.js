@@ -36,3 +36,14 @@ export const isPrime = (n) => {
   correctAnswer = 'yes';
   return correctAnswer;
 };
+
+export const getProgression = (a, b, c) => {
+  const result = [];
+  result.push(a);
+
+  for (let i = 1; i < 10; i += 1) {
+    result.push(c);
+    c += b;
+  }
+  return result;
+};
