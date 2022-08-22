@@ -17,3 +17,22 @@ export const getNOD = (x, y) => {
   }
   return x;
 };
+
+export const isPrime = (n) => {
+  let correctAnswer;
+  if (n === 1 || n === 0) {
+    correctAnswer = 'no';
+    return correctAnswer;
+  } if (n === 2) {
+    correctAnswer = 'yes';
+    return correctAnswer;
+  }
+  for (let i = 2; i < n; i += 1) {
+    if (n % i === 0) {
+      correctAnswer = 'no';
+      return correctAnswer;
+    }
+  }
+  correctAnswer = 'yes';
+  return correctAnswer;
+};

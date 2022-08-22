@@ -1,37 +1,22 @@
-import readlineSync from 'readline-sync';
-import { greeting, getRandomNumber, getCorrectAnswer } from '../index.js';
+import { getRandomNumber, isPrime } from '../utilities.js';
+import { roundsNumber, gameRound } from '../index.js';
 
 const primeGame = () => {
-  const userName = greeting();
-
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-
-  const maxRoundsWon = 3;
+  const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no"';
   let roundsCounter = 0;
-  while (roundsCounter < maxRoundsWon) {
-    const number = getRandomNumber();
+  const roundData = [];
+  const getRoundData = () => {
+    while (roundsCounter < roundsNumber) {
+      const number = getRandomNumber();
+      const question = `${number}`;
+      const correctAnswer = isPrime(number);
 
-    console.log(`Question: ${number}`);
-
-    const correctAnswer = getCorrectAnswer(number);
-
-    // показываем правильный ответ для быстрого тестирования
-    // console.log('CorrectAnswerCheck: ' + getCorrectAnswer(number));
-
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if (correctAnswer === userAnswer) {
-      console.log('Correct!');
+      roundData.push([question, correctAnswer]);
       roundsCounter += 1;
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
-      break;
     }
-
-    if (roundsCounter === maxRoundsWon) {
-      console.log(`Congratulations, ${userName}!`);
-    }
-  }
+    return roundData;
+  };
+  gameRound(getRoundData(), gameRules);
 };
 
 export default primeGame;

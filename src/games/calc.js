@@ -3,7 +3,7 @@ import { roundsNumber, gameRound } from '../index.js';
 
 const calcGame = () => {
   const gameRules = 'What is the result of this expression?';
-  let roundsCounter = 0;
+  const roundsCounter = 0;
   const roundData = [];
   const getRoundData = () => {
     while (roundsCounter < roundsNumber) {
