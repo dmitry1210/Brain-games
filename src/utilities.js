@@ -4,12 +4,12 @@ export const getRandomNumber100 = () => Math.round(Math.random() * 100);
 const operatorsArr = ['+', '-', '*'];
 export const getOperator = () => operatorsArr[Math.floor(Math.random() * operatorsArr.length)];
 
-export const getNOD = (x, y) => {
-  if ((typeof x !== 'number') || (typeof y !== 'number')) {
+export const getNOD = (a, b) => {
+  if ((typeof a !== 'number') || (typeof b !== 'number')) {
     return false;
   }
-  x = Math.abs(x);
-  y = Math.abs(y);
+  let x = Math.abs(a);
+  let y = Math.abs(b);
   while (y) {
     const t = y;
     y = x % y;
