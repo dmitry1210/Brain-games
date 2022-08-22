@@ -9,9 +9,8 @@ const progressionGame = () => {
     while (roundsCounter < roundsNumber) {
       const firstNum = getRandomNumber();
       const increment = getRandomNumber();
-      const newNum = firstNum + increment;
       const randomIndex = getRandomNumber();
-      const progressionRow = getProgression(firstNum, increment, newNum);
+      const progressionRow = getProgression(firstNum, increment);
       const correctAnswer = progressionRow[randomIndex];
       progressionRow[randomIndex] = '..';
 
