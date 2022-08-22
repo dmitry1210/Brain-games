@@ -1,36 +1,28 @@
-import readlineSync from 'readline-sync';
-import { greeting, getRandomNumber } from '../index.js';
+import { getRandomNumber } from '../utilities.js';
+import { roundsNumber, gameRound } from '../index.js';
 
 const evenGame = () => {
-  const userName = greeting();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-  const maxRoundsWon = 3;
+  const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
   let roundsCounter = 0;
-  while (roundsCounter < maxRoundsWon) {
-    const number = getRandomNumber();
+  const roundData = [];
+  const getRoundData = () => {
+    while (roundsCounter < roundsNumber) {
+      const number = getRandomNumber();
 
-    console.log(`Question: ${number}`);
+      const question = `${number}`;
 
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if ((number % 2 === 0) && (userAnswer === 'yes')) {
-      console.log('Correct!');
+      let correctAnswer;
+      if (number % 2 === 0) {
+        correctAnswer = 'yes';
+      } else {
+        correctAnswer = 'no';
+      }
+      roundData.push([question, correctAnswer]);
       roundsCounter += 1;
-    } else if (number % 2 !== 0 && userAnswer === 'no') {
-      console.log('Correct!');
-      roundsCounter += 1;
-    } else if ((number % 2 === 0) && (userAnswer !== 'yes')) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
-      break;
-    } else if ((number % 2 !== 0) && (userAnswer !== 'no')) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
-      break;
     }
-  }
-  if (roundsCounter === maxRoundsWon) {
-    console.log(`Congratulations, ${userName}!`);
-  }
+    return roundData;
+  };
+  gameRound(getRoundData(), gameRules);
 };
 
 export default evenGame;

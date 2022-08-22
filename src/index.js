@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 
+export const roundsNumber = 3;
 export const gameRound = (roundData, gameRules) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
@@ -7,23 +8,34 @@ export const gameRound = (roundData, gameRules) => {
 
   console.log(gameRules);
 
-  const maxRoundsWon = 3;
   let roundsCounter = 0;
-  while (roundsCounter < maxRoundsWon) {
-    const [question, correctAnswer] = roundData;
+  let i = 0;
+  const j = 0;
+  const k = 1;
+  while (roundsCounter < roundsNumber) {
+    const question = roundData[i][j];
+    const correctAnswer = roundData[i][k];
+
+    console.log(roundData);
 
     console.log(`Question: ${question}`);
-    const userAnswer = Number(readlineSync.question('Your answer: '));
+    let userAnswer;
+    if (typeof (correctAnswer) === 'number') {
+      userAnswer = Number(readlineSync.question('Your answer: '));
+    } else {
+      userAnswer = (readlineSync.question('Your answer: '));
+    }
 
     if (correctAnswer === userAnswer) {
       console.log('Correct!');
       roundsCounter += 1;
+      i += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
       break;
     }
   }
-  if (roundsCounter === maxRoundsWon) {
+  if (roundsCounter === roundsNumber) {
     console.log(`Congratulations, ${userName}!`);
   }
 };
