@@ -17,7 +17,7 @@ export const gameRound = (roundData, gameRules) => {
     const correctAnswer = roundData[i][k];
 
     // показываем правильный ответ для быстрого тестирования
-    console.log(roundData);
+    // console.log(roundData);
 
     console.log(`Question: ${question}`);
 
