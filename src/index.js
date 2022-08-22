@@ -40,20 +40,6 @@ export const gameRound = (roundData, gameRules) => {
   }
 };
 
-export function getNOD(x, y) {
-  if ((typeof x !== 'number') || (typeof y !== 'number')) {
-    return false;
-  }
-  x = Math.abs(x);
-  y = Math.abs(y);
-  while (y) {
-    const t = y;
-    y = x % y;
-    x = t;
-  }
-  return x;
-}
-
 export const getCorrectAnswer = (n) => {
   let correctAnswer;
   if (n === 1 || n === 0) {
