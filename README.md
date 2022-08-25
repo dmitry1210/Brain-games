@@ -5,8 +5,9 @@
 ### brain-even game demonstration
 [![asciicast](https://asciinema.org/a/ehxGJw6u6sKWPnOTJcITbkETy.svg)](https://asciinema.org/a/ehxGJw6u6sKWPnOTJcITbkETy)
 
-### brain-calc playback via asciinema
-[![asciicast](https://asciinema.org/a/WAC6BGhxm4V1u7XzEI1ju2iye.svg)](https://asciinema.org/a/WAC6BGhxm4V1u7XzEI1ju2iye)
+### brain-calc game demonstration
+[![asciicast](https://asciinema.org/a/VhHWCfF6JOFuQkqRulUWUyeuG.svg)](https://asciinema.org/a/VhHWCfF6JOFuQkqRulUWUyeuG)
+
 
 ### brain-gcd playback via asciinema
 [![asciicast](https://asciinema.org/a/G3gXr74mbnUBYd3bHfEYrzbTu.svg)](https://asciinema.org/a/G3gXr74mbnUBYd3bHfEYrzbTu)
