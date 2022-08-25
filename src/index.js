@@ -21,22 +21,18 @@ export const startGameRound = (roundData, gameRules) => {
 
     console.log(`Question: ${question}`);
 
-    let userAnswer;
-    if (typeof (correctAnswer) === 'number') {
-      userAnswer = Number(readlineSync.question('Your answer: '));
-    } else {
-      userAnswer = (readlineSync.question('Your answer: '));
-    }
+    const userAnswer = (readlineSync.question('Your answer: '));
 
-    if (correctAnswer === userAnswer) {
-      console.log('Correct!');
-      roundsCounter += 1;
-      i += 1;
-    } else {
+    if (String(correctAnswer) !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
       break;
     }
+
+    console.log('Correct!');
+    roundsCounter += 1;
+    i += 1;
   }
+
   if (roundsCounter === roundsNumber) {
     console.log(`Congratulations, ${userName}!`);
   }
