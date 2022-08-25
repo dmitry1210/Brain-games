@@ -1,5 +1,5 @@
 import { getRandomNumber } from '../utilities.js';
-import { roundsNumber, gameRound } from '../index.js';
+import { roundsNumber, startGameRound } from '../index.js';
 
 const startEvenGame = () => {
   const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -22,7 +22,7 @@ const startEvenGame = () => {
     }
     return roundData;
   };
-  gameRound(getRoundData(), gameRules);
+  startGameRound(getRoundData(), gameRules);
 };
 
 export default startEvenGame;

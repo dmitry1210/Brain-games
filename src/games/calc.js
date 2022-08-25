@@ -1,5 +1,5 @@
 import { getRandomNumber, getOperator } from '../utilities.js';
-import { roundsNumber, gameRound } from '../index.js';
+import { roundsNumber, startGameRound } from '../index.js';
 
 const startCalcGame = () => {
   const gameRules = 'What is the result of this expression?';
@@ -32,7 +32,7 @@ const startCalcGame = () => {
     }
     return roundData;
   };
-  gameRound(getRoundData(), gameRules);
+  startGameRound(getRoundData(), gameRules);
 };
 
 export default startCalcGame;
