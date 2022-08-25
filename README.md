@@ -8,12 +8,11 @@
 ### brain-calc game demonstration
 [![asciicast](https://asciinema.org/a/VhHWCfF6JOFuQkqRulUWUyeuG.svg)](https://asciinema.org/a/VhHWCfF6JOFuQkqRulUWUyeuG)
 
+### brain-gcd game demonstration
+[![asciicast](https://asciinema.org/a/SEookBj6ewER7TWnFZGaoDKhX.svg)](https://asciinema.org/a/SEookBj6ewER7TWnFZGaoDKhX)
 
-### brain-gcd playback via asciinema
-[![asciicast](https://asciinema.org/a/G3gXr74mbnUBYd3bHfEYrzbTu.svg)](https://asciinema.org/a/G3gXr74mbnUBYd3bHfEYrzbTu)
+### brain-progression game demonstration
+[![asciicast](https://asciinema.org/a/lyYrh0R0RyPIPxGV642mdfHVD.svg)](https://asciinema.org/a/lyYrh0R0RyPIPxGV642mdfHVD)
 
-### brain-progression playback via asciinema
-[![asciicast](https://asciinema.org/a/AtjOP8ZATAIff9k447HPxXNGn.svg)](https://asciinema.org/a/AtjOP8ZATAIff9k447HPxXNGn)
-
-### brain-prime playback via asciinema
-[![asciicast](https://asciinema.org/a/aDumhciZabWzah0LaNRHgEJUv.svg)](https://asciinema.org/a/aDumhciZabWzah0LaNRHgEJUv)
+### brain-prime game demonstration
+[![asciicast](https://asciinema.org/a/kNzSFwrZo7o9XtyT2kILXrP7Z.svg)](https://asciinema.org/a/kNzSFwrZo7o9XtyT2kILXrP7Z)
