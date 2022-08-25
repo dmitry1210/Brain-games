@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../utilities.js';
+import { getRandomNumber, isEven } from '../utilities.js';
 import { roundsNumber, startGameRound } from '../index.js';
 
 const startEvenGame = () => {
@@ -8,15 +8,9 @@ const startEvenGame = () => {
   const getRoundData = () => {
     while (roundsCounter < roundsNumber) {
       const number = getRandomNumber();
-
       const question = `${number}`;
+      const correctAnswer = isEven(number) ? 'yes' : 'no';
 
-      let correctAnswer;
-      if (number % 2 === 0) {
-        correctAnswer = 'yes';
-      } else {
-        correctAnswer = 'no';
-      }
       roundData.push([question, correctAnswer]);
       roundsCounter += 1;
     }

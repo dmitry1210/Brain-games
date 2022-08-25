@@ -47,3 +47,5 @@ export const getProgression = (a, b) => {
   }
   return result;
 };
+
+export const isEven = (number) => number % 2 === 0;
