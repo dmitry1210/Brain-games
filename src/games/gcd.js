@@ -1,7 +1,7 @@
 import { getRandomNumber100, getNOD } from '../utilities.js';
 import { roundsNumber, gameRound } from '../index.js';
 
-const gcdGame = () => {
+const startGCDGame = () => {
   const gameRules = 'Find the greatest common divisor of given numbers.';
   let roundsCounter = 0;
   const roundData = [];
@@ -22,4 +22,4 @@ const gcdGame = () => {
   gameRound(getRoundData(), gameRules);
 };
 
-export default gcdGame;
+export default startGCDGame;

@@ -1,7 +1,7 @@
 import { getRandomNumber, getProgression } from '../utilities.js';
 import { roundsNumber, gameRound } from '../index.js';
 
-const progressionGame = () => {
+const startProgressionGame = () => {
   const gameRules = 'What number is missing in the progression?';
   let roundsCounter = 0;
   const roundData = [];
@@ -24,4 +24,4 @@ const progressionGame = () => {
   gameRound(getRoundData(), gameRules);
 };
 
-export default progressionGame;
+export default startProgressionGame;

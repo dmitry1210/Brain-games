@@ -1,7 +1,7 @@
 import { getRandomNumber } from '../utilities.js';
 import { roundsNumber, gameRound } from '../index.js';
 
-const evenGame = () => {
+const startEvenGame = () => {
   const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
   let roundsCounter = 0;
   const roundData = [];
@@ -25,4 +25,4 @@ const evenGame = () => {
   gameRound(getRoundData(), gameRules);
 };
 
-export default evenGame;
+export default startEvenGame;
