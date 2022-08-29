@@ -8,14 +8,8 @@ export const startGameRound = (roundData, gameRules) => {
 
   console.log(gameRules);
 
-  let roundsCounter = 0;
-  let i = 0;
-  const j = 0;
-  const k = 1;
-  while (roundsCounter < roundsNumber) {
-    const question = roundData[i][j];
-    const correctAnswer = roundData[i][k];
-
+  /* eslint no-restricted-syntax: ["off", "ForOfStatement"] */
+  for (const [question, correctAnswer] of roundData) {
     // показываем правильный ответ для быстрого тестирования
     // console.log(roundData);
 
@@ -23,17 +17,12 @@ export const startGameRound = (roundData, gameRules) => {
 
     const userAnswer = (readlineSync.question('Your answer: '));
 
-    if (String(correctAnswer) !== userAnswer) {
+    if (String(correctAnswer) === userAnswer) {
+      console.log('Correct!');
+    } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
       break;
     }
-
-    console.log('Correct!');
-    roundsCounter += 1;
-    i += 1;
-  }
-
-  if (roundsCounter === roundsNumber) {
     console.log(`Congratulations, ${userName}!`);
   }
 };
