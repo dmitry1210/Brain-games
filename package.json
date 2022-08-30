@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/dmitry1210/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/dmitry1210/frontend-project-lvl1/actions)",
+  "description": "This is my first project with Hexlet! [![Actions Status](https://github.com/dmitry1210/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/dmitry1210/frontend-project-lvl1/actions)",
   "main": "index.js",
   "type": "module",
   "bin": {
