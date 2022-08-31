@@ -49,3 +49,21 @@ export const getProgression = (a, b) => {
 };
 
 export const isEven = (number) => number % 2 === 0;
+
+export const getExpressionResult = (number1, operator, number2) => {
+  let correctAnswer;
+  switch (operator) {
+    case '+':
+      correctAnswer = number1 + number2;
+      break;
+    case '-':
+      correctAnswer = number1 - number2;
+      break;
+    case '*':
+      correctAnswer = number1 * number2;
+      break;
+    default:
+    // do nothing
+  }
+  return correctAnswer;
+};

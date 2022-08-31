@@ -8,7 +8,6 @@ export const startGameRound = (roundData, gameRules) => {
 
   console.log(gameRules);
 
-  /* eslint no-restricted-syntax: ["off", "ForOfStatement"] */
   for (const [question, correctAnswer] of roundData) {
     // показываем правильный ответ для быстрого тестирования
     // console.log(roundData);

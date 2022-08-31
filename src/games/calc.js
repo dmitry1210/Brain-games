@@ -1,4 +1,4 @@
-import { getRandomNumber, getOperator } from '../utilities.js';
+import { getRandomNumber, getOperator, getExpressionResult } from '../utilities.js';
 import { roundsNumber, startGameRound } from '../index.js';
 
 const startCalcGame = () => {
@@ -10,23 +10,9 @@ const startCalcGame = () => {
       const number1 = getRandomNumber();
       const number2 = getRandomNumber();
       const operator = getOperator();
-
       const question = `${number1} ${operator} ${number2}`;
+      const correctAnswer = getExpressionResult(number1, operator, number2);
 
-      let correctAnswer;
-      switch (operator) {
-        case '+':
-          correctAnswer = number1 + number2;
-          break;
-        case '-':
-          correctAnswer = number1 - number2;
-          break;
-        case '*':
-          correctAnswer = number1 * number2;
-          break;
-        default:
-        // do nothing
-      }
       roundData.push([question, correctAnswer]);
       roundsCounter += 1;
     }
