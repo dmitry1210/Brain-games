@@ -1,8 +1,8 @@
 import { getRandomNumber, getOperator, getExpressionResult } from '../utilities.js';
 import { roundsNumber, startGameRound } from '../index.js';
 
+const gameRules = 'What is the result of this expression?';
 const startCalcGame = () => {
-  const gameRules = 'What is the result of this expression?';
   let roundsCounter = 0;
   const roundData = [];
   const getRoundData = () => {

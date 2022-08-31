@@ -1,8 +1,8 @@
 import { getRandomNumber, isEven } from '../utilities.js';
 import { roundsNumber, startGameRound } from '../index.js';
 
+const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const startEvenGame = () => {
-  const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
   let roundsCounter = 0;
   const roundData = [];
   const getRoundData = () => {

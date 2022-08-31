@@ -1,8 +1,8 @@
 import { getRandomNumber, isPrime } from '../utilities.js';
 import { roundsNumber, startGameRound } from '../index.js';
 
+const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 const startPrimeGame = () => {
-  const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no"';
   let roundsCounter = 0;
   const roundData = [];
   const getRoundData = () => {

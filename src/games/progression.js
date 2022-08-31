@@ -1,8 +1,8 @@
 import { getRandomNumber, getProgression } from '../utilities.js';
 import { roundsNumber, startGameRound } from '../index.js';
 
+const gameRules = 'What number is missing in the progression?';
 const startProgressionGame = () => {
-  const gameRules = 'What number is missing in the progression?';
   let roundsCounter = 0;
   const roundData = [];
   const getRoundData = () => {
