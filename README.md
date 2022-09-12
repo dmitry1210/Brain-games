@@ -9,11 +9,11 @@ Setup:
 
 Run games:
 
-> $ make brain-even
-> $ make brain-calc
-> $ make brain-gcd
-> $ make brain-progression
-> $ make brain-prime
+`$ make brain-even`  
+`$ make brain-calc`  
+`$ make brain-gcd`  
+`$ make brain-progression`  
+`$ make brain-prime`  
 
 brain-even game demonstration
 
