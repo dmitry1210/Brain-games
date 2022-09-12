@@ -1,16 +1,16 @@
 ## Hexlet tests and linter status: [![Actions Status](https://github.com/dmitry1210/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/dmitry1210/frontend-project-lvl1/actions)  Code Climate: [![Maintainability](https://api.codeclimate.com/v1/badges/e729eea71a9bb1027faf/maintainability)](https://codeclimate.com/github/dmitry1210/frontend-project-lvl1/maintainability)
 
 ### brain-even game demonstration
-[![asciicast](https://asciinema.org/a/ehxGJw6u6sKWPnOTJcITbkETy.svg)](https://asciinema.org/a/ehxGJw6u6sKWPnOTJcITbkETy)
+[![asciicast](https://asciinema.org/a/tmzeLNSYzFme5W2BHZJVJ1iKh.svg)](https://asciinema.org/a/tmzeLNSYzFme5W2BHZJVJ1iKh)
 
 ### brain-calc game demonstration
-[![asciicast](https://asciinema.org/a/VhHWCfF6JOFuQkqRulUWUyeuG.svg)](https://asciinema.org/a/VhHWCfF6JOFuQkqRulUWUyeuG)
+[![asciicast](https://asciinema.org/a/DKwnXwg2KxRRcKuAUOP34XY35.svg)](https://asciinema.org/a/DKwnXwg2KxRRcKuAUOP34XY35)
 
 ### brain-gcd game demonstration
-[![asciicast](https://asciinema.org/a/SEookBj6ewER7TWnFZGaoDKhX.svg)](https://asciinema.org/a/SEookBj6ewER7TWnFZGaoDKhX)
+[![asciicast](https://asciinema.org/a/bbPcP9gwp4dbhrIE2S1QIXhKJ.svg)](https://asciinema.org/a/bbPcP9gwp4dbhrIE2S1QIXhKJ)
 
 ### brain-progression game demonstration
-[![asciicast](https://asciinema.org/a/lyYrh0R0RyPIPxGV642mdfHVD.svg)](https://asciinema.org/a/lyYrh0R0RyPIPxGV642mdfHVD)
+[![asciicast](https://asciinema.org/a/tVHZFTJPWbYH9aqjtdWcCJmSD.svg)](https://asciinema.org/a/tVHZFTJPWbYH9aqjtdWcCJmSD)
 
 ### brain-prime game demonstration
-[![asciicast](https://asciinema.org/a/kNzSFwrZo7o9XtyT2kILXrP7Z.svg)](https://asciinema.org/a/kNzSFwrZo7o9XtyT2kILXrP7Z)
+[![asciicast](https://asciinema.org/a/icxkKj8lb5B3XkR8f8ArGDqdr.svg)](https://asciinema.org/a/icxkKj8lb5B3XkR8f8ArGDqdr)
