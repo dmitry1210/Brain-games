@@ -5,7 +5,7 @@
 
 Setup:
 
-> $ make install
+`$ make install`
 
 Run games:
 
