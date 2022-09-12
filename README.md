@@ -15,22 +15,21 @@ Run games:
 `$ make brain-progression`  
 `$ make brain-prime`  
 
-brain-even game demonstration
-
+**brain-even** game demonstration  
 [![asciicast](https://asciinema.org/a/tmzeLNSYzFme5W2BHZJVJ1iKh.svg)](https://asciinema.org/a/tmzeLNSYzFme5W2BHZJVJ1iKh)
 
-brain-calc game demonstration
+**brain-calc** game demonstration
 
 [![asciicast](https://asciinema.org/a/DKwnXwg2KxRRcKuAUOP34XY35.svg)](https://asciinema.org/a/DKwnXwg2KxRRcKuAUOP34XY35)
 
-brain-gcd game demonstration
+**brain-gcd** game demonstration
 
 [![asciicast](https://asciinema.org/a/bbPcP9gwp4dbhrIE2S1QIXhKJ.svg)](https://asciinema.org/a/bbPcP9gwp4dbhrIE2S1QIXhKJ)
 
-brain-progression game demonstration
+**brain-progression** game demonstration
 
 [![asciicast](https://asciinema.org/a/tVHZFTJPWbYH9aqjtdWcCJmSD.svg)](https://asciinema.org/a/tVHZFTJPWbYH9aqjtdWcCJmSD)
 
-brain-prime game demonstration
+**brain-prime** game demonstration
 
 [![asciicast](https://asciinema.org/a/icxkKj8lb5B3XkR8f8ArGDqdr.svg)](https://asciinema.org/a/icxkKj8lb5B3XkR8f8ArGDqdr)
