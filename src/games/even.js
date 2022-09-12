@@ -3,20 +3,11 @@ import { startGameRound } from '../index.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const startEvenGame = () => {
-  // let roundsCounter = 0;
-  // const roundData = [];
-  // const getRoundData = () => {
-  // while (roundsCounter < roundsNumber) {
   const number = getRandomNumber();
   const question = `${number}`;
   const correctAnswer = isEven(number) ? 'yes' : 'no';
 
-  //   roundData.push([question, correctAnswer]);
-  //   roundsCounter += 1;
-  // }
   return [question, correctAnswer];
-  // };
-  // startGameRound(getRoundData(), gameRules);
 };
 
 export default () => startGameRound(startEvenGame, gameRules);
