@@ -1,8 +1,10 @@
-export const getRandomNumber = () => Math.round(Math.random() * 10);
-export const getRandomNumber100 = () => Math.round(Math.random() * 100);
+// export const getRandomNumber = () => Math.round(Math.random() * 10);
+// export const getRandomNumber100 = () => Math.round(Math.random() * 100);
 
-const operatorsArr = ['+', '-', '*'];
-export const getOperator = () => operatorsArr[Math.floor(Math.random() * operatorsArr.length)];
+export const getRandomNumber = (min = 1, max = 10) => {
+  const rand = min + Math.random() * (max - min);
+  return Math.round(rand);
+};
 
 export const getNOD = (a, b) => {
   if ((typeof a !== 'number') || (typeof b !== 'number')) {
@@ -19,22 +21,17 @@ export const getNOD = (a, b) => {
 };
 
 export const isPrime = (n) => {
-  let correctAnswer;
   if (n === 1 || n === 0) {
-    correctAnswer = 'no';
-    return correctAnswer;
+    return false;
   } if (n === 2) {
-    correctAnswer = 'yes';
-    return correctAnswer;
+    return true;
   }
   for (let i = 2; i < n; i += 1) {
     if (n % i === 0) {
-      correctAnswer = 'no';
-      return correctAnswer;
+      return false;
     }
   }
-  correctAnswer = 'yes';
-  return correctAnswer;
+  return true;
 };
 
 export const getProgression = (a, b) => {
@@ -50,7 +47,7 @@ export const getProgression = (a, b) => {
 
 export const isEven = (number) => number % 2 === 0;
 
-export const getExpressionResult = (number1, operator, number2) => {
+export const calculateExpression = (number1, operator, number2) => {
   let correctAnswer;
   switch (operator) {
     case '+':
