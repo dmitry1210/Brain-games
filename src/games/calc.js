@@ -1,7 +1,7 @@
 import { getRandomNumber, calculateExpression } from '../utilities.js';
 import { startGameRound } from '../index.js';
 
-const gameRules = 'What is the result of this expression?';
+const gameRules = 'What is the result of the expression?';
 const startCalcGame = () => {
   const operatorsArr = ['+', '-', '*'];
   const getOperator = () => operatorsArr[Math.floor(Math.random() * operatorsArr.length)];
