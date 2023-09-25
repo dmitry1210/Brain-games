@@ -16,16 +16,16 @@
 `$ make brain-prime`  
 
 **brain-even** game demonstration  
-[![asciicast](https://asciinema.org/a/tmzeLNSYzFme5W2BHZJVJ1iKh.svg)](https://asciinema.org/a/tmzeLNSYzFme5W2BHZJVJ1iKh)
+[![asciicast](https://asciinema.org/a/610153.svg)](https://asciinema.org/a/610153)
 
 **brain-calc** game demonstration  
-[![asciicast](https://asciinema.org/a/DKwnXwg2KxRRcKuAUOP34XY35.svg)](https://asciinema.org/a/DKwnXwg2KxRRcKuAUOP34XY35)
+[![asciicast](https://asciinema.org/a/610154.svg)](https://asciinema.org/a/610154)
 
 **brain-gcd** game demonstration  
-[![asciicast](https://asciinema.org/a/bbPcP9gwp4dbhrIE2S1QIXhKJ.svg)](https://asciinema.org/a/bbPcP9gwp4dbhrIE2S1QIXhKJ)
+[![asciicast](https://asciinema.org/a/610156.svg)](https://asciinema.org/a/610156)
 
 **brain-progression** game demonstration  
-[![asciicast](https://asciinema.org/a/tVHZFTJPWbYH9aqjtdWcCJmSD.svg)](https://asciinema.org/a/tVHZFTJPWbYH9aqjtdWcCJmSD)
+[![asciicast](https://asciinema.org/a/610158.svg)](https://asciinema.org/a/610158)
 
 **brain-prime** game demonstration  
-[![asciicast](https://asciinema.org/a/icxkKj8lb5B3XkR8f8ArGDqdr.svg)](https://asciinema.org/a/icxkKj8lb5B3XkR8f8ArGDqdr)
+[![asciicast](https://asciinema.org/a/610160.svg)](https://asciinema.org/a/610160)
